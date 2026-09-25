@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Professor</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <main class="pagina-cadastro">
+
+        <header class="cabecalho-cadastro">
+
+            <span class="page">
+                Sistema Escolar
+            </span>
+
+            <h1>
+                Cadastro de Professor
+            </h1>
+
+            <p>
+                Preencha os dados abaixo para cadastrar um professor.
+            </p>
+
+            <a class="link-voltar" href="index.html">
+                ← Voltar para tela principal
+            </a>
+
+        </header>
+
+
+        <form id="formProfessor">
+
+            <div class="form-grid">
+
+
+                <div class="campo campo-grande">
+
+                    <label for="nome">
+                        Nome completo
+                    </label>
+
+                    <input type="text" id="nome" placeholder="Digite o nome completo">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="CPF">
+                        CPF
+                    </label>
+
+                    <input type="text" id="CPF" placeholder="Digite o CPF">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="dataNascimento">
+                        Data de nascimento
+                    </label>
+
+                    <input type="date" id="dataNascimento">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input type="email" id="email" placeholder="Digite o e-mail">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="telefone">
+                        Telefone
+                    </label>
+
+                    <input type="text" id="telefone" placeholder="Digite o telefone">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="turno">
+                        Turno
+                    </label>
+
+                    <select id="turno">
+
+                        <option value="">
+                            Selecione o turno
+                        </option>
+
+                        <option value="Integral">
+                            Integral
+                        </option>
+
+                        <option value="Noturno">
+                            Noturno
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="materia">
+                        Matéria
+                    </label>
+
+                    <input type="text" id="materia" placeholder="Digite a matéria que leciona">
+
+                </div>
+
+            </div>
+
+
+            <div class="acoes">
+
+                <a href="index.html" class="botao-secundario">
+                    Cancelar
+                </a>
+
+                <button type="button" onclick="CadastrarProfessor()">
+                    Cadastrar Professor
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <main class="pagina-cadastro">
+        <header class="cabecalho-cadastro">
+            <span class="page">
+                Sistema Escolar
+            </span>
+            <h1>
+                Cadastro de Aluno
+            </h1>
+
+            <p>
+                Preencha os dados abaixo para cadastrar um novo aluno.
+            </p>
+            <a class="link-voltar" href="index.html">
+                ← Voltar para tela principal
+            </a>
+
+        </header>
+
+
+        <form id="formAluno">
+
+            <div class="form-grid">
+
+
+                <div class="campo campo-grande">
+
+                    <label for="nome">
+                        Nome Completo:
+                    </label>
+
+                    <input type="text" id="nome" placeholder="Digite seu nome completo">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="CPF">
+                        CPF:
+                    </label>
+
+                    <input type="text" id="CPF" placeholder="Digite seu CPF">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="dataNascimento">
+                        Data de Nascimento:
+                    </label>
+
+                    <input type="date" id="dataNascimento">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="matricula">
+                        Matrícula:
+                    </label>
+
+                    <input type="text" id="matricula" placeholder="Digite a matrícula">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="email">
+                        E-mail:
+                    </label>
+
+                    <input type="email" id="email" placeholder="Digite seu e-mail">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="telefone">
+                        Telefone:
+                    </label>
+
+                    <input type="text" id="telefone" placeholder="Digite seu telefone">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="turno">
+                        Turno:
+                    </label>
+
+                    <select id="turno">
+
+                        <option value="">
+                            Selecione o turno
+                        </option>
+
+                        <option value="Integral">
+                            Integral
+                        </option>
+
+                        <option value="Noturno">
+                            Noturno
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="curso">
+                        Curso:
+                    </label>
+
+                    <select id="curso">
+
+                        <option value="">
+                            Selecione o curso
+                        </option>
+
+                        <option value="1º Ano - Desenvolvimento de Sistemas">
+                            1º Ano - Desenvolvimento de Sistemas
+                        </option>
+
+                        <option value="2º Ano - Desenvolvimento de Sistemas">
+                            2º Ano - Desenvolvimento de Sistemas
+                        </option>
+
+                        <option value="3º Ano - Desenvolvimento de Sistemas">
+                            3º Ano - Desenvolvimento de Sistemas
+                        </option>
+
+                        <option value="1º Ano - Agronegócio">
+                            1º Ano - Agronegócio
+                        </option>
+
+                        <option value="2º Ano - Agronegócio">
+                            2º Ano - Agronegócio
+                        </option>
+
+                        <option value="3º Ano - Agronegócio">
+                            3º Ano - Agronegócio
+                        </option>
+
+                        <option value="EJA">
+                            EJA
+                        </option>
+
+                        <option value="Ensino Regular">
+                            Ensino Regular
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="acoes">
+
+                <a href="index.html" class="botao-secundario">
+                    Cancelar
+                </a>
+
+                <button type="button" onclick="CadastrarAluno()">
+                    Cadastrar Aluno
+                </button>
+
+            </div>
+
+        </form>
+
+<section class="lista-alunos">
+    <h2>Alunos Cadastrados</h2>
+    <div id="listaAlunos">
+         <p>Nenhum aluno cadastrado</p>
+    </div>
+    </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
