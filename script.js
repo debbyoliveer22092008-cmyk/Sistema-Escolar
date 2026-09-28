@@ -1,10 +1,11 @@
 /* Aqui temos a nossa classe pai(pessoa) */
 
 class Pessoa {
+    #nome;
 
     constructor(nome, cpf, dataNascimento, email, telefone, turno) {
 
-        this.nome = nome;
+        this.#nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
         this.email = email;
@@ -13,10 +14,13 @@ class Pessoa {
 
     }
 
+    getNome(){
+        return this.#nome;
+    }
 
     apresentar() {
 
-        console.log(`Olá, meu nome é ${this.nome}`);
+        console.log(`Olá, meu nome é ${this.#nome}`);
 
     }
 
@@ -392,6 +396,29 @@ function CadastrarAluno() {
     console.log(sistema.alunos);
     alert("Aluno cadastrado com sucesso!");
 }
+
+function ListarProfessores(){
+    let lista = document.getElementById("listaProfessores");
+    lista.innerHTML = ""; for (let i = 0; i < sistema.professores.length; i++){
+        lista.innerHTML += `
+        <div class="professor-card">
+            <h3>${sistema.professores[i].nome}</h3>
+           
+            <p>
+            Matéria:
+            ${sistema.professores[i].materia}
+            </p>
+            <p>
+            Turno:
+            ${sistema.professores[i].turno}
+            </p>
+           
+        </div>
+        `;
+       
+    }
+    }
+
 /* Função que cadastra o professor */
 
 function CadastrarProfessor() {
@@ -465,6 +492,7 @@ function CadastrarProfessor() {
         turno
     );
     sistema.adicionar_Professor(professor);
+    ListarProfessores();
     console.log(sistema.professores);
     alert("Professor cadastrado com sucesso!");
 
