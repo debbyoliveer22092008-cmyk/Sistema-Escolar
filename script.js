@@ -2,22 +2,23 @@
 
 class Pessoa {
     #nome;
+    #email;
 
     constructor(nome, cpf, dataNascimento, email, telefone, turno) {
 
         this.#nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
-        this.email = email;
+        this.#email = email;
         this.telefone = telefone;
         this.turno = turno;
 
     }
 
-    getNome(){
+     getNome(){
         return this.#nome;
     }
-
+   
     setNome(novoNome){
         if(novoNome.length >= 3){
             this.#nome = novoNome;
@@ -28,6 +29,17 @@ class Pessoa {
 
         console.log(`Olá, meu nome é ${this.#nome}`);
 
+    }
+
+    getEmail(){
+        return this.#email;
+
+    }
+
+    setEmail(novoEmail){
+        if(novoEmail.include("@")) {
+            this.#email = novoEmail;
+        }
     }
 
 }
