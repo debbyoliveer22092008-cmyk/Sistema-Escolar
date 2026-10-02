@@ -18,6 +18,12 @@ class Pessoa {
         return this.#nome;
     }
 
+    setNome(novoNome){
+        if(novoNome.length >= 3){
+            this.#nome = novoNome;
+        }
+    }
+
     apresentar() {
 
         console.log(`Olá, meu nome é ${this.#nome}`);
@@ -285,7 +291,7 @@ function ListarAlunos(){
     lista.innerHTML = ""; for (let i = 0; i < sistema.alunos.length; i++){
         lista.innerHTML += `
         <div class="aluno-card">
-            <h3>${sistema.alunos[i].nome}</h3>
+            <h3>${sistema.alunos[i].getNome()}</h3>
            
             <p>
             Matricula:
