@@ -311,6 +311,33 @@ button:hover {
     box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.10);
 }
 
+/*Estilização da Lista de Alunos*/
+ .lista-alunos{
+ margin-top: 40px; 
+    padding: 20px;
+    background-color: #f9fafb; 
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #7c3aed; 
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 8px;
+}
+
+#lista-alunos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aluno-card { 
+    background-color: #ffffff; 
+    border: 1px solid #e5e7eb; 
+    border-radius: 8px; 
+    padding: 16px 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+}
 
 /* =========================
    BOTÕES
