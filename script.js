@@ -37,8 +37,10 @@ class Pessoa {
     }
 
     setEmail(novoEmail){
-        if(novoEmail.include("@")) {
+        if(novoEmail.includes('@')) {
             this.#email = novoEmail;
+        } else{
+            console.log('E-mail inválido')
         }
     }
 
