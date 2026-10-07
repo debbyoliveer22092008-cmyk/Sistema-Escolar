@@ -311,9 +311,11 @@ button:hover {
     box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.10);
 }
 
-/*Estilização da Lista de Alunos*/
+/* =========================
+   ESTILIZAÇÃO DA LISTA DE ALUNOS
+   ========================= */
  .lista-alunos{
- margin-top: 40px; 
+    margin-top: 40px; 
     padding: 20px;
     background-color: #f9fafb; 
     border-radius: 12px;
@@ -328,7 +330,7 @@ button:hover {
 #lista-alunos{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+  
 }
 
 .aluno-card { 
@@ -337,6 +339,8 @@ button:hover {
     border-radius: 8px; 
     padding: 16px 20px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    color: #000000;
+    gap: 50px;
 }
 
 /* =========================
