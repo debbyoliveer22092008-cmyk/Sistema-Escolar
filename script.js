@@ -415,6 +415,9 @@ function CadastrarAluno() {
     ListarAlunos();
     console.log(sistema.alunos);
     alert("Aluno cadastrado com sucesso!");
+
+    document.getElementById("nome").form.reset(); 
+
 }
 
 function ListarProfessores(){
